@@ -1,21 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Orbitron:wght@400..900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 body {
     margin: 0;
     overflow: hidden;
     background-color: #1a1a1a;
-    position: relative;
     font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    background: rgba(95, 95, 95, 0.9);
+    width: 360px;
+    height: 340px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgb(165, 50, 150);
+    text-align: center;
+    overflow: hidden;
 }
 
 .raindrop {
     position: absolute;
     bottom: 100%;
     background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 50%; /* Make it circular */
-    width: 10px; /* Size of the raindrop */
-    height: 10px; /* Size of the raindrop */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
     animation: fall linear infinite;
+    z-index: 5;
 }
 
 @keyframes fall {
@@ -27,15 +53,18 @@ body {
     }
 }
 
-.profile {
-    background-color: white;
-    width: 200px;
-    height: 100px;
-    align-items: center;
-    text-align: center;
-    display: inline;
+.user {
+    margin: 0;
 }
 
-.user {
-    
+.text {
+    margin-bottom: 70%;
+    color: aliceblue;
+}
+
+.img {
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -20px   ;
 }
