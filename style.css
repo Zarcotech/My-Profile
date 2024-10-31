@@ -57,13 +57,41 @@ body {
 }
 
 .text {
-    margin-bottom: 70%;
     color: aliceblue;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background: grey;
+    width: 360px;
+    height: 340px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.pic {
+    margin-bottom: -20px;
+    position: relative;
 }
 
 .img {
     width: 100px;
     border-radius: 50%;
-    position: relative;
-    margin-top: -20px   ;
+    margin-bottom: 200px;
+}
+
+.img-link {
+    width: 20px;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+.img-link:hover{
+    width: 25px;
 }
