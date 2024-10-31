@@ -23,12 +23,11 @@ body {
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: center; 
-    background: rgba(95, 95, 95, 0.9);
+    background: grey;
     width: 360px;
     height: 340px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 30px rgb(165, 50, 150);
     text-align: center;
     overflow: hidden;
 }
