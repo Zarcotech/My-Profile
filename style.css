@@ -68,8 +68,7 @@ body {
 }
 
 .img-link {
-    width: 20px;
-    height: 20px; 
+    width: 30px;
     background-color: white;
     border-radius: 15px;
     position: relative;
@@ -95,4 +94,12 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+.bio {
+    height: 5px;
+    font-size: 12px;
+}
+br {
+    margin: 0;
 }
