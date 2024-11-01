@@ -14,50 +14,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    position: relative;
-    z-index: 10;
-}
-
-.profile {
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    background: grey;
-    width: 360px;
-    height: 340px;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.raindrop {
-    position: absolute;
-    bottom: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    animation: fall linear infinite;
-    z-index: 5;
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
-}
-
-.user {
-    margin: 0;
-}
-
-.text {
-    color: aliceblue;
 }
 
 .profile {
@@ -73,25 +29,70 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
+    z-index: 10;
+}
+
+.raindrop {
+    position: absolute;
+    bottom: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: fall linear infinite;
+    z-index: 5;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+
+.user {
+    margin: 0;
+    margin-top: -90px;
+}
+
+.text {
+    color: aliceblue;
 }
 
 .pic {
-    margin-top: 70px;
     position: relative;
+    top: 10px;
 }
 
 .img {
     width: 100px;
     border-radius: 50%;
-    ma
 }
 
 .img-link {
     width: 20px;
+    height: 20px; 
     background-color: white;
-    margin-bottom: 100px;
+    border-radius: 15px;
+    position: relative;
+    top: 40px;
+    transition: transform 0.3s ease; 
+    display: inline-block; 
 }
 
-.img-link:hover{
-    width: 25px;
+.img-link:hover {
+    animation: bounce 1s forwards; 
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.25);
+    }
+    60% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
